@@ -49,6 +49,34 @@ export default function App() {
         >
           Crack a Programming joke
         </Link>
+        <Link
+          to="/Misc-jokes"
+          className="border mt-6 px-6 py-4 border-black rounded-2xl bg-white text-black"
+          onClick={() => fetchJoke("Misc")}
+        >
+          Crack a Misc joke
+        </Link>
+        <Link
+          to="/Any-jokes"
+          className="border mt-6 px-6 py-4 border-black rounded-2xl bg-white text-black"
+          onClick={() => fetchJoke("Any")}
+        >
+          Crack a Any joke
+        </Link>
+        <Link
+          to="/Christmas-jokes"
+          className="border mt-6 px-6 py-4 border-black rounded-2xl bg-white text-black"
+          onClick={() => fetchJoke("Christmas")}
+        >
+          Crack a Christmas joke
+        </Link>
+        <Link
+          to="/Spooky-jokes"
+          className="border mt-6 px-6 py-4 border-black rounded-2xl bg-white text-black"
+          onClick={() => fetchJoke("Spooky")}
+        >
+          Crack a Spooky joke
+        </Link>
       </div>
 
       <Routes>
@@ -76,6 +104,42 @@ export default function App() {
           path="/Programming-jokes"
           element={
             <Programming
+              jokeData={main}
+              fetchJoke={fetchJoke}
+            />
+          }
+        />
+        <Route
+          path="/Misc-jokes"
+          element={
+            <Misc
+              jokeData={main}
+              fetchJoke={fetchJoke}
+            />
+          }
+        />
+        <Route
+          path="/Any-jokes"
+          element={
+            <Any
+              jokeData={main}
+              fetchJoke={fetchJoke}
+            />
+          }
+        />
+        <Route
+          path="/Christmas-jokes"
+          element={
+            <Christmas
+              jokeData={main}
+              fetchJoke={fetchJoke}
+            />
+          }
+        />
+        <Route
+          path="/Spooky-jokes"
+          element={
+            <Spooky
               jokeData={main}
               fetchJoke={fetchJoke}
             />
