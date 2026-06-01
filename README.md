@@ -1,0 +1,1 @@
+here i have fetched an Api and used app.jsx as home page with routing according to the categories of jokes when you click on a button you will get one joke of that type and can get another joke on a click
